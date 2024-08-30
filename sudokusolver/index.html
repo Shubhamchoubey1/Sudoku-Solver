@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div id="name">Sudoku Game</div>
+    </div>
+    <div id="timer">Time: 00:00:00</div>
+    <div id="pauseResumeButtons">
+        <button id="PauseTimer">Pause</button>
+        <button id="ResumeTimer">Resume</button>
+    </div>
+    <br>
+    <div class="center-container">
+        <div id="diff">
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button id="GetPuzzle">Get Puzzle</button>
+            <button id="SolvePuzzle">Solve Puzzle</button>
+        </div>
+    </div>
+    <div class="sudoku_grid" id="sudokuGrid">
+        <!-- Sudoku grid will be generated here -->
+    </div>
+    <div class="number-counts" id="numberCounts">
+        <div class="numberBox" id="count-1"><span class="number">1:</span> <span class="count">9</span></div>
+        <div class="numberBox" id="count-2"><span class="number">2:</span> <span class="count">9</span></div>
+        <div class="numberBox" id="count-3"><span class="number">3:</span> <span class="count">9</span></div>
+        <div class="numberBox" id="count-4"><span class="number">4:</span> <span class="count">9</span></div>
+        <div class="numberBox" id="count-5"><span class="number">5:</span> <span class="count">9</span></div>
+        <div class="numberBox" id="count-6"><span class="number">6:</span> <span class="count">9</span></div>
+        <div class="numberBox" id="count-7"><span class="number">7:</span> <span class="count">9</span></div>
+        <div class="numberBox" id="count-8"><span class="number">8:</span> <span class="count">9</span></div>
+        <div class="numberBox" id="count-9"><span class="number">9:</span> <span class="count">9</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
